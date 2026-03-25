@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "e3relaxh2"
+version = "0.1.0"
+description = "E(3)-equivariant crystal structure relaxation with joint atom–lattice interaction"
+readme = "README.md"
+requires-python = ">=3.9,<3.13"
+dependencies = [
+    "torch>=1.12",
+    "torch-geometric",
+    "e3nn",
+    "lmdb",
+    "numpy",
+    "scipy",
+    "ase",
+]
+
+[project.optional-dependencies]
+train = ["wandb"]
+test = ["pymatgen", "pandas"]
+preprocess = ["pymatgen", "pandas"]
+dev = ["wandb", "pymatgen", "pandas"]
+
+[tool.setuptools.packages.find]
+include = ["model*", "utils*", "train*", "test*", "preprocess*"]
