@@ -46,7 +46,7 @@ E3RelaxH2/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/E3RelaxH2.git
+git clone https://github.com/guaguabujianle/E3RelaxH2.git
 cd E3RelaxH2
 
 # 2. Create a conda environment (recommended: Python 3.10)
