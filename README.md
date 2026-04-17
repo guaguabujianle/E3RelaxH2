@@ -219,13 +219,12 @@ This produces a CSV under `./results/` with per-structure metrics and also print
 | `structure_match_*_gt` | pymatgen `StructureMatcher.fit()` result |
 | `elapsed_time` | Inference wall time per batch |
 
-To quickly inspect results (current helper uses a fixed CSV path in the script):
+To quickly inspect results:
 
 ```bash
 python -m test.check_result
 ```
-
----
+Note: test.check_result currently uses a hard-coded CSV path. Please update the path in the script before running it.
 
 ### Pretrained checkpoints
 
