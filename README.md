@@ -207,6 +207,27 @@ Notes:
 
 This produces a CSV under `./results/` with per-structure metrics and also prints final average metrics at the end of evaluation.
 
+### Pretrained checkpoints
+
+We provide several trained models for verifying the reported performance:
+
+- https://zenodo.org/records/19628988
+
+After downloading and extracting `checkpoints.zip`, you should see three directories:
+
+- `run-20260307_223408-E3RelaxH2_c2db_20260307_223408`
+- `run-20260308_123150-E3RelaxH2_mp_20260308_123149`
+- `run-20260322_124705-E3RelaxH2_xmno_20260322_124703`
+
+These contain logs and trained models for the **c2db**, **mp**, and **xmno** datasets, respectively.
+
+In each run directory, the checkpoint is stored at:
+
+```text
+run-xxx/files/model.pt
+```
+
+
 | Column | Description |
 |---|---|
 | `cif_id` | Structure identifier |
